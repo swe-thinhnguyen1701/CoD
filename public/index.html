@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMB Alliance</title>
+    <link rel="icon" href="./images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,28 +22,37 @@
             <img src="./images/logo.png" class="logo" />
           </div>
         </a>
-        <div class="icon-container">
-          <i class="fa-solid fa-bars icon"></i>
-        </div>
-        <div class="menu-toggle">
-          <div class="icon-container">
-            <i class="fa-solid fa-xmark icon"></i>
+        <button id="menu-toggle-open-btn" class="btn">
+          <div class="icon-container menu-toggle">
+            <i class="fa-solid fa-bars icon"></i>
+          </div>
+        </button>
+        <div id="menu" class="menu">
+          <div class="menu-header">
+            <div class="logo-container">
+              <img src="./images/logo.png" class="logo" />
+            </div>
+            <button id="menu-toggle-close-btn" class="btn">
+              <div class="icon-container menu-toggle">
+                <i class="fa-solid fa-xmark icon"></i>
+              </div>
+            </button>
           </div>
           <ul class="list">
             <li class="list-item">
-              <a href="#" class="link">Heroes</a>
+              <a href="#" class="link">HEROES</a>
             </li>
             <li class="list-item">
-              <a href="#" class="link">Pets</a>
+              <a href="#" class="link">PETS</a>
             </li>
             <li class="list-item">
-              <a href="#" class="link">Artifacts</a>
+              <a href="#" class="link">ARTIFACTS</a>
             </li>
             <li class="list-item">
-              <a href="#" class="link">Factions</a>
+              <a href="#" class="link">FACTIONS</a>
             </li>
             <li class="list-item">
-              <a href="#" class="link">Troops</a>
+              <a href="#" class="link">TROOPS</a>
             </li>
           </ul>
         </div>
@@ -53,5 +63,8 @@
       src="https://kit.fontawesome.com/f5f3967918.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
