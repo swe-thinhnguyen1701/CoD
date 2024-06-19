@@ -1,0 +1,140 @@
+:root {
+  --black-denim-color: #191c27;
+  --white-color: #fff;
+  --gold-color: #c28f2c;
+  --gold-color-v2: #c8aa6e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--black-denim-color);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+/* LINKS */
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--white-color);
+}
+
+.link:visited {
+  color: var(--white-color);
+}
+
+/* ICONS */
+.icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: background-color 0.5;
+}
+
+.icon-container:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.icon {
+  color: var(--white-color);
+  font-size: 3rem;
+}
+
+/* LIST */
+.list {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.list-item {
+  list-style: none;
+}
+
+/* LOGO */
+.logo-container {
+  width: 90px;
+  height: 90px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.logo span:nth-child(5n + 1) {
+  color: #00405b;
+}
+
+.logo span:nth-child(5n + 2) {
+  color: #584f8d;
+}
+
+.logo span:nth-child(5n + 3) {
+  color: #bc4f90;
+}
+
+.logo span:nth-child(5n + 4) {
+  color: #ff6360;
+}
+
+.logo span:nth-child(5n + 5) {
+  color: #ffa600;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.menu-toggle {
+    background-color: var(--black-denim-color);
+    position: absolute;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    padding-top: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+.menu-toggle .icon-container{
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+nav .list {
+  width: 100%;
+}
+
+nav .list-item {
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+nav .list-item .link {
+  font-size: 2rem;
+  text-align: center;
+}
+
+nav .list .list-item:hover {
+  background-color: #333;
+  .link {
+    color: var(--gold-color-v2);
+  }
+}
