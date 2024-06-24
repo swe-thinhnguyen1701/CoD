@@ -63,7 +63,7 @@ body {
 }
 
 /* BUTTONS */
-.btn{
+.btn {
   background-color: unset;
   border: none;
 }
@@ -103,23 +103,25 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
-nav .menu-toggle{
+nav .menu-toggle {
   margin-right: 5px;
 }
 
 .menu {
-    background-color: var(--black-denim-color);
-    position: absolute;
-    top: 0;
-    display: none;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
+  background-color: var(--black-denim-color);
+  position: absolute;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
 }
 
-.menu-header{
+.menu-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,34 +153,91 @@ nav .menu-toggle{
   }
 }
 
-@media screen and (min-width: 1024px){
-  .menu-toggle{
+@media screen and (min-width: 1024px) {
+  nav{
+    max-width: 1300px;
+  }
+  .menu-header,
+  #menu-toggle-open-btn {
     display: none;
   }
 
-  .menu{
+  .menu {
     position: static;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
     background-color: none;
     height: auto;
-    width: auto;
+    width: 90%;
   }
 
-  .menu .list{
+  .menu .list {
     display: flex;
-  }
-
-  /* .menu .list-item, .menu .list{
     width: auto;
-  } */
-
-  .menu .list-item{
-    margin-right: 30px;
   }
 
-  .menu .list-item:last-child{
+  .menu .list-item {
+    margin-right: 30px;
+    padding: 10px 15px;
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .menu .list-item:last-child {
     margin: 0;
+  }
+}
+
+/* SECTION */
+section{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* VIDEO */
+.main-head {
+  position: relative;
+}
+
+.main-head video{
+  width: 100%;
+  max-height: 800px;
+}
+
+.main-head div {
+  width: 100%;
+  max-height: 600px;
+}
+
+.main-head__img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-head img {
+  position: absolute;
+  bottom: 30px;
+  min-width: 180px;
+  width: 90px;
+  height: 100px;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px){
+  .main-head img {
+    width: 210px;
+    height: 200px;
+    bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .main-head img{
+    width: 320px;
+    height: 300px;
+    bottom: 100px;
   }
 }
