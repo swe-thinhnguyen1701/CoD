@@ -98,8 +98,22 @@ body {
   color: #ffa600;
 }
 
+/* CARD */
+.card{
+  width: 100%;
+}
+
 /* NAV */
+header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 nav {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--black-denim-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,7 +169,7 @@ nav .menu-toggle {
 
 @media screen and (min-width: 1024px) {
   nav{
-    max-width: 1300px;
+    max-width: 1500px;
   }
   .menu-header,
   #menu-toggle-open-btn {
@@ -193,10 +207,16 @@ nav .menu-toggle {
 section{
   max-width: 1300px;
   margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+section h3{
+  font-size: 2.4rem;
 }
 
 /* VIDEO */
 .main-head {
+  margin-top: 120px;
   position: relative;
 }
 
@@ -218,26 +238,88 @@ section{
 
 .main-head img {
   position: absolute;
-  bottom: 30px;
-  min-width: 180px;
-  width: 90px;
-  height: 100px;
+  bottom: 10px;
+  width: 70%;
+  max-width: 800px;
+  height: 100%;
   z-index: 1;
+}
+
+/* FEATURED NEWS */
+.featured-news{
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  color: var(--white-color);
+}
+
+.featured-news .list .list-item{
+  margin-bottom: 30px;
+}
+
+.featured-news .list .list-item:last-child{
+  margin: 0;
+}
+
+.featured-news__img-container{
   margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.featured-news__img-container img{
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.featured-news .list .list-item:hover{
+  cursor: pointer;
+  border: 1px solid var(--gold-color);
+  img{
+    transform: scale(1.2);
+  }
+}
+
+.featured-news__content-container{
+  padding: 10px;
+  padding-top: 0;
+}
+
+.featured-news__content-header{
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.featured-news__content-category{
+  color: rgb(200, 170, 110);
+}
+
+.featured-news__content-main h4{
+  font-size: 1.6rem;
+}
+
+.featured-news__content-main p{
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 768px){
-  .main-head img {
-    width: 210px;
-    height: 200px;
-    bottom: 100px;
+  .featured-news .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .featured-news .list .list-item{
+    width: 40%;
+    /* margin: 0; */
   }
 }
 
 @media screen and (min-width: 1024px){
-  .main-head img{
-    width: 320px;
-    height: 300px;
-    bottom: 100px;
+  .featured-news .list .list-item{
+    width: 23%;
+    margin: 0;
   }
 }
