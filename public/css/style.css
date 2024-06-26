@@ -99,13 +99,9 @@ body {
 }
 
 /* NAV */
-header{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
 nav {
   position: fixed;
+  top: 0;
   z-index: 1000;
   width: 100%;
   background-color: var(--black-denim-color);
@@ -113,6 +109,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  /* background-color: white; */
 }
 
 nav .menu-toggle {
@@ -211,7 +208,7 @@ section h3{
 
 /* VIDEO */
 .main-head {
-  margin-top: 90px;
+  margin-top: 97px;
   position: relative;
 }
 
