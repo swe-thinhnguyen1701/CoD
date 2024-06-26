@@ -8,6 +8,10 @@ const menuToggle = () => {
   menu.toggle("blind", {}, 500);
 };
 
+const preventPhoneScreen = () => {
+  
+}
+
 $(window).on("resize", defaultMenu);
 $("#menu-toggle-open-btn").on("click", menuToggle);
 $("#menu-toggle-close-btn").on("click", menuToggle);
