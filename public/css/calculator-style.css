@@ -1,0 +1,26 @@
+:root {
+    --black-denim-color: #191c27;
+    --white-color: #fff;
+    --gold-color: #c28f2c;
+    --gold-color-v2: #c8aa6e;
+  }
+
+body{
+    color: var(--gold-color);
+}
+
+section{
+    margin-bottom: 30px;
+}
+
+.universal-speed{
+    margin-top: 100px;
+}
+
+.form-group{
+    width: 40%;
+}
+
+img{
+    width: 100%;
+}
