@@ -13,14 +13,31 @@ section{
     margin-bottom: 30px;
 }
 
+section .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section .list .list-item {
+    width: auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .universal-speed{
     margin-top: 100px;
 }
 
 .form-group{
-    width: 40%;
+    width: 50%;
 }
 
 img{
     width: 100%;
 }
+
