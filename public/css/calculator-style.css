@@ -13,20 +13,37 @@ section{
     margin-bottom: 30px;
 }
 
+section h2{
+    font-size: 3rem;
+}
+
 section .list {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-section .list .list-item {
-    width: auto;
+.universal-speed .list .list-item{
+    margin-bottom: 25px;
 }
 
-.form-group{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.universal-speed .list .list-item img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5px;
+}
+
+input{
+    display: block;
+    font-size: 1.6rem;
+    background-color: var(--black-denim-color);
+    color: var(--gold-color);
+    border: 0;
+    padding: 5px 20px;
+    outline: none;
+    width: 120px;
+    
 }
 
 .universal-speed{
