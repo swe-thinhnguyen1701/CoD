@@ -9,6 +9,11 @@ body{
     color: var(--gold-color);
 }
 
+.fs-20{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
 section{
     margin-bottom: 30px;
 }
@@ -24,11 +29,11 @@ section .list {
     flex-wrap: wrap;
 }
 
-.universal-speed .list .list-item{
+section .list .list-item{
     margin-bottom: 25px;
 }
 
-.universal-speed .list .list-item img {
+section .list .list-item img {
     width: 120px;
     height: 120px;
     margin-bottom: 5px;
@@ -58,3 +63,11 @@ img{
     width: 100%;
 }
 
+.total-container{
+    display: flex;
+    justify-content: center;
+}
+
+.total{
+    font-size: 2rem;
+}

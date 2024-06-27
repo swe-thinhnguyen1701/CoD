@@ -1,182 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Speed Up Calculator</title>
-    <link rel="icon" href="./images/logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/calculator-style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <a href="./index.html" class="link">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed Up Calculator</title>
+  <link rel="icon" href="./images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/calculator-style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="./index.html" class="link">
+        <div class="logo-container">
+          <img src="./images/logo.png" class="logo" />
+        </div>
+      </a>
+      <button id="menu-toggle-open-btn" class="btn">
+        <div class="icon-container menu-toggle">
+          <i class="fa-solid fa-bars icon"></i>
+        </div>
+      </button>
+      <div id="menu" class="menu">
+        <div class="menu-header">
           <div class="logo-container">
             <img src="./images/logo.png" class="logo" />
           </div>
-        </a>
-        <button id="menu-toggle-open-btn" class="btn">
-          <div class="icon-container menu-toggle">
-            <i class="fa-solid fa-bars icon"></i>
-          </div>
-        </button>
-        <div id="menu" class="menu">
-          <div class="menu-header">
-            <div class="logo-container">
-              <img src="./images/logo.png" class="logo" />
+          <button id="menu-toggle-close-btn" class="btn">
+            <div class="icon-container menu-toggle">
+              <i class="fa-solid fa-xmark icon"></i>
             </div>
-            <button id="menu-toggle-close-btn" class="btn">
-              <div class="icon-container menu-toggle">
-                <i class="fa-solid fa-xmark icon"></i>
-              </div>
-            </button>
-          </div>
-          <ul class="list">
-            <li class="list-item">
-              <a href="#" class="link">PATCH NOTES</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="link">HEROES</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="link">PETS</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="link">ARTIFACTS</a>
-            </li>
-            <li class="list-item">
-              <a href="./speed-calculator.html" class="link"
-                >SPEED CALCULATOR</a
-              >
-            </li>
-          </ul>
+          </button>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="universal-speed">
-        <h2>Universal Speed</h2>
         <ul class="list">
           <li class="list-item">
-            <img src="./images/speed-up-items/us1.webp" />
-            <input
-              type="text"
-              id="us1"
-              name="us1"
-              maxlength="10"
-              placeholder="Amount"
-            />
+            <a href="#" class="link">PATCH NOTES</a>
           </li>
           <li class="list-item">
-            <img src="./images/speed-up-items/us15.webp" />
-            <input
-              type="text"
-              id="us1"
-              name="us1"
-              maxlength="10"
-              placeholder="Amount"
-            />
+            <a href="#" class="link">HEROES</a>
           </li>
           <li class="list-item">
-            <img src="./images/speed-up-items/us60.webp" />
-            <input
-              type="text"
-              id="us1"
-              name="us1"
-              maxlength="10"
-              placeholder="Amount"
-            />
+            <a href="#" class="link">PETS</a>
           </li>
           <li class="list-item">
-            <img src="./images/speed-up-items/us180.webp" />
-            <input
-              type="text"
-              id="us1"
-              name="us1"
-              maxlength="10"
-              placeholder="Amount"
-            />
+            <a href="#" class="link">ARTIFACTS</a>
           </li>
           <li class="list-item">
-            <img src="./images/speed-up-items/us480.webp" />
-            <input
-              type="text"
-              id="us1"
-              name="us1"
-              maxlength="10"
-              placeholder="Amount"
-            />
-          </li>
-          <li class="list-item">
-            <img src="./images/speed-up-items/us900.webp" />
-            <input
-              type="text"
-              id="us1"
-              name="us1"
-              maxlength="10"
-              placeholder="Amount"
-            />
-          </li>
-          <li class="list-item">
-            <img src="./images/speed-up-items/us1440.webp" />
-            <input
-              type="text"
-              id="us1"
-              name="us1"
-              maxlength="10"
-              placeholder="Amount"
-            />
-          </li>
-          <li class="list-item">
-            <img src="./images/speed-up-items/us4320.webp" />
-            <input
-              type="text"
-              id="us1"
-              name="us1"
-              maxlength="10"
-              placeholder="Amount"
-            />
-          </li>
-          <li class="list-item">
-            <img src="./images/speed-up-items/us10080.webp" />
-            <input
-              type="text"
-              id="us1"
-              name="us1"
-              maxlength="10"
-              placeholder="Amount"
-            />
-          </li>
-          <li class="list-item">
-            <img src="./images/speed-up-items/us43200.webp" />
-            <input
-              type="text"
-              id="us1"
-              name="us1"
-              maxlength="10"
-              placeholder="Amount"
-            />
+            <a href="./speed-calculator.html" class="link">SPEED CALCULATOR</a>
           </li>
         </ul>
-      </section>
-    </main>
+      </div>
+    </nav>
+  </header>
 
-    <script
-      src="https://kit.fontawesome.com/f5f3967918.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+  <main>
+    <section class="universal-speed">
+      <h2>Universal Speed</h2>
+      <ul class="list">
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=13I2jOUBcLtVAMSJXYtY-R9VXFMn2fAIu&sz=w1000" />
+          <input type="text" pattern="/^-?\d+\.?\d*$/" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1zH7saR2DGbs3laD-lRp7sC4UZWq_2IJQ&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1-ZMMINye3LLdXdT-ZGuta-JthOfXAWAf&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=167Y_iPpGiErYEUayxUy887uSLZEKpe4i&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1otydpak_XiO3Sq_reJwqVYG_3o847Wjk&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1bDZU4SVYY8o2jnC__tZmAD3Ap1Hg0gRj&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=12tj190r2l39pMlrlC67CQ5gWexIm2Nmz&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1df3_XfOG8ooppSEPhsi6qx4ORluwFBto&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1LomjxwE6vvfxV49sajRhZmIYi00e7RX8&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1GCUevgihBrENjWaGSOo2-LKHr_3NURF8&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1cgD2dQ9s-vPvqNwulBDQhl0dwUIJ7LwW&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+      </ul>
+      <div class="total-container">
+        <span class="total">
+          <span class="fs-20">0</span>D <span class="fs-20">0</span>H <span class="fs-20">0</span>M
+        </span>
+      </div>
+    </section>
+    <section class="building-speed">
+      <h2>Building Speed</h2>
+      <ul class="list">
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1yDq8UDeF_rrGaIFGY5N4XaA4P2OLejkV&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1EDcuO6xuVUAX8O-4cmTAQnufIr7-kNfa&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1VWzrhce9Wlj6OtQ35pL02HZqt7APztIW&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1VKjUyIXeqzbfszQN1QVgm_-55zkfMJ3K&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1oOdtop1ei0DMoo2v06cgQ8MAQ7LuU8lJ&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1ETrhilIAzzvh-sZTMd5-5WWvXO5skCpT&sz=w1000" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="./images/speed-up-items/us900.webp" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="./images/speed-up-items/us1440.webp" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="./images/speed-up-items/us4320.webp" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="./images/speed-up-items/us10080.webp" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+        <li class="list-item">
+          <img src="./images/speed-up-items/us43200.webp" />
+          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+        </li>
+      </ul>
+      <div class="total-container">
+        <span class="total">
+          <span class="fs-20">0</span>D <span class="fs-20">0</span>H <span class="fs-20">0</span>M
+        </span>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://kit.fontawesome.com/f5f3967918.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
