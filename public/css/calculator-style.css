@@ -6,12 +6,16 @@
   }
 
 body{
-    color: var(--gold-color);
+    color: var(--white-color);
 }
 
 .fs-20{
     font-size: 2.8rem;
     font-weight: 500;
+}
+
+.fc-gold{
+    color: var(--gold-color);
 }
 
 section{
