@@ -67,51 +67,59 @@
       <ul class="list">
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=13I2jOUBcLtVAMSJXYtY-R9VXFMn2fAIu&sz=w1000" />
-          <input type="text" pattern="/^-?\d+\.?\d*$/" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input" maxlength="10" placeholder="Amount" data-val="1" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1_z3DdBMk2bx9JTaA0Bj4VY_wMU2w-NXv&sz=w1000" />
+          <input type="text" class="us-amount-input" maxlength="10" placeholder="Amount" data-val="5" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1zH7saR2DGbs3laD-lRp7sC4UZWq_2IJQ&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input" maxlength="10" placeholder="Amount" data-val="10" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1-ZMMINye3LLdXdT-ZGuta-JthOfXAWAf&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input" maxlength="10" placeholder="Amount" data-val="15" />
+        </li>
+        <li class="list-item">
+          <img src="https://drive.google.com/thumbnail?id=1nk1x8a8TFaeHbZSpL_HaT27ujA8Py8ho&sz=w1000" />
+          <input type="text" class="us-amount-input" maxlength="10" placeholder="Amount" data-val="30" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=167Y_iPpGiErYEUayxUy887uSLZEKpe4i&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input" maxlength="10" placeholder="Amount" data-val="60" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1otydpak_XiO3Sq_reJwqVYG_3o847Wjk&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input" maxlength="10" placeholder="Amount" data-val="180" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1bDZU4SVYY8o2jnC__tZmAD3Ap1Hg0gRj&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input " maxlength="10" placeholder="Amount" data-val="480" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=12tj190r2l39pMlrlC67CQ5gWexIm2Nmz&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input " maxlength="10" placeholder="Amount" data-val="900" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1df3_XfOG8ooppSEPhsi6qx4ORluwFBto&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input " maxlength="10" placeholder="Amount" data-val="1440" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1LomjxwE6vvfxV49sajRhZmIYi00e7RX8&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input " maxlength="10" placeholder="Amount" data-val="4320" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1GCUevgihBrENjWaGSOo2-LKHr_3NURF8&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input " maxlength="10" placeholder="Amount" data-val="10080" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1cgD2dQ9s-vPvqNwulBDQhl0dwUIJ7LwW&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" class="us-amount-input " maxlength="10" placeholder="Amount" data-val="43200" />
         </li>
       </ul>
       <div class="total-container">
-        <span class="total">
+        <span id="us-total" class="total">
           <span class="fs-20">0</span>D <span class="fs-20">0</span>H <span class="fs-20">0</span>M
         </span>
       </div>
@@ -121,47 +129,32 @@
       <ul class="list">
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1yDq8UDeF_rrGaIFGY5N4XaA4P2OLejkV&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" id="input bs-1" maxlength="10" placeholder="Amount" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1EDcuO6xuVUAX8O-4cmTAQnufIr7-kNfa&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" id="input bs-5" maxlength="10" placeholder="Amount" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1VWzrhce9Wlj6OtQ35pL02HZqt7APztIW&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" id="input bs-10" maxlength="10" placeholder="Amount" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1VKjUyIXeqzbfszQN1QVgm_-55zkfMJ3K&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" id="input bs-15" maxlength="10" placeholder="Amount" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1oOdtop1ei0DMoo2v06cgQ8MAQ7LuU8lJ&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" id="input bs-30" maxlength="10" placeholder="Amount" />
         </li>
         <li class="list-item">
           <img src="https://drive.google.com/thumbnail?id=1ETrhilIAzzvh-sZTMd5-5WWvXO5skCpT&sz=w1000" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <input type="text" id="input bs-60" maxlength="10" placeholder="Amount" />
         </li>
+        <!-- MISSING bs-180 -->
         <li class="list-item">
-          <img src="./images/speed-up-items/us900.webp" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
-        </li>
-        <li class="list-item">
-          <img src="./images/speed-up-items/us1440.webp" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
-        </li>
-        <li class="list-item">
-          <img src="./images/speed-up-items/us4320.webp" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
-        </li>
-        <li class="list-item">
-          <img src="./images/speed-up-items/us10080.webp" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
-        </li>
-        <li class="list-item">
-          <img src="./images/speed-up-items/us43200.webp" />
-          <input type="text" id="us1" name="us1" maxlength="10" placeholder="Amount" />
+          <img src="https://drive.google.com/thumbnail?id=152urL07ivJ_3s8Iho0hJlnaYZmyqRQvm&sz=w1000" />
+          <input type="text" id="input bs-480" maxlength="10" placeholder="Amount" />
         </li>
       </ul>
       <div class="total-container">
